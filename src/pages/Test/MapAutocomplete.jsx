@@ -50,9 +50,7 @@ export default function MapAutocomplete() {
     };
 
 
-    console.log(location);
 
-    const key = "AIzaSyCjWPFeXQxeTc2tAolDusY_OhPgi97MbeE";
 
     // Attach to global for callback
     window.initMap = initMap;
@@ -60,7 +58,7 @@ export default function MapAutocomplete() {
     // Check if script is already loaded
     if (!window.google) {
       const script = document.createElement("script");
-      script.src = `https://maps.googleapis.com/maps/api/js?key=${key}&libraries=places&callback=initMap`;
+      script.src = `https://maps.googleapis.com/maps/api/js?key=${import.meta.env.VITE_API_KEY}&libraries=places&callback=initMap`;
       script.async = true;
       script.defer = true;
       document.head.appendChild(script);
