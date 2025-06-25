@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* here will be all the data */
+@import "tailwindcss";
+
+
+
+@theme {
+    --font-poppins: "Poppins", sans-serif;
+    --font-inter: "Inter", sans-serif;
+    --color-primary01: #007570
+}
+
+.swal2-container {
+    backdrop-filter: blur(8px); /* Blurs the background */
+    -webkit-backdrop-filter: blur(8px); /* Safari support */
+  }
+  
+.mapPage .custom-swal {
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+.gm-style-mtc-bbw{
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+  .mapPage .gm-style-iw {
+  padding: 0px !important;
+}
+
+.mapPage .gm-style-iw-d {
+  padding: 0px !important;
+  overflow: hidden !important;
+}
+
+.mapPage .gm-style-iw-ch{
+  padding-top: 0px !important;
+}
+  
+.mapPage .gm-ui-hover-effect span {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+.mapPage .gm-ui-hover-effect{
+  height: 40px !important;
+}
+
+
+/* Scrollbar Styles (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #007570; /* Tailwind's blue-500 */
+  border-radius: 100px;
+  border: 2px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #007570; /* Tailwind's blue-600 */
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #007570 #f1f1f1;
+}
